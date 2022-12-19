@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a.split {
+  float: left;
+  color: white;
+  font-size: 34px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(36, 14, 145);
+  min-height: 60px;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.arrow {
+  border: solid rgb(254, 251, 251);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: baseline;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.fa_custom {
+color: 
+#f4f7f8
+}
+.picture{
+    padding: 45px 160px 120px;
+}
+#btn{
+        background-color:#00008B;
+        
+    }
+    .dropdown-menu{
+        width:700px;
+    }
+   .cw{
+  background-color:white ;
+  width: 300px;
+  border:20px rgb(10, 10, 138) ;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  width: 50%;
+  bottom: 10px;
+}
+.but{
+    background-color:#00008B;
+    border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.terms{
+    padding: 5px 10px;
+  text-align: left;
+
+}
+.empty{
+    padding: 5px 10px;
+  text-align: left;
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="#login">login &nbsp; <i class="arrow down"></i></a>
+        <a href="#info">info &nbsp; <i class="arrow down"></i></a>
+        <a href="#6E Rewards">6E Rewards</a>
+        <a href="#Manage">Manage &nbsp; <i class="arrow down"></i></a>
+        <a href="#Check-in">Check-in</a>
+      <a href="#Book">Book &nbsp; <i class="arrow down"></i></a>
+    <a href="#Indigo" class="split"><img src="pic.png.png" alt="flight" width="90" height="30">
+    </a></a>
+    </div>
+<div class="picture">
+    <img src="https://static.goindigo.in/content/dam/indigov2/6e-website/information/advertisement/Fast-Forward-Mweb.jpeg" alt="flight" width="900" height="200">
+    <div class="container"  >
+        <h2>Baggage Details:</h2>
+        <h4>Please select the required class: </h4>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" id="btn" type="button" data-toggle="dropdown">Class
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#" id="first"onclick="economy()">Economy</a></li>
+            <li><a href="#" onclick="business()">Business Class</a></li>
+            <li><a href="#" onclick="business_1()">First Class</a></li>
+          </ul>
+        </div>
+      
+      
+      </div>
+      <br/>
+      <div class="container">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="btn" type="button" data-toggle="dropdown">Baggage Allowance
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#" id="fourth">23x1</a></li>
+          <li><a href="#" id="five">23x2</a></li>
+          <li><a href="#" id="second">32x1</a></li>
+          <li><a href="#"  id="third">32x2</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+        const data=document.querySelector('#first');
+        const data_2=document.querySelector('#second');
+        const data_3=document.querySelector('#third');
+        const data_4=document.querySelector('#fourth');
+        const data_5=document.querySelector('#five');
+        
+        function economy(){
+            data_2.remove();
+            data_3.remove();
+            document.getElementById('btn').innerHTML='Economy';
+        
+        }
+        function business(){
+            data_4.remove();
+            data_5.remove();
+            document.getElementById('btn').innerHTML='Business';
+        }
+        function business_1(){
+            data_4.remove();
+            data_5.remove();
+            document.getElementById('btn').innerHTML='First Class ';
+        }
+    
+    </script>
+    <hr style="width:70%">
+    <div class="terms">
+        <h2> Terms and Conditions: </h2>
+        <p> 1.The choices selected by the passengers will only be provided if it is available.Orelse an alternative approach will be given according.</p>
+         <p>   2.They cannot negotiate the options after the resource allocation.</p>
+         <p> 3.By making an IndiGo flight booking during the Promotion Period under the Offer, the customer: (i) unconditionally and irrevocably agrees to these terms and conditions; and (ii) consents that all information provided by the customer may be shared by IndiGo with its agents, representatives, service providers, employees, and may be used to send promotional information pertaining to IndiGo to the customer, in future.</p>
+        <p> 4.IndiGo's decision with respect to all transactions under the Offer, shall be final and binding on all the participating customers.</p>
+        <p> 5.The miles are not valid on IndiGo's group bookings.</p>
+        <p> 6.The Offer is being made purely on a “best efforts” basis and is subject to force majeure conditions. IndiGo reserves the right to terminate or modify this Offer at any time, without assigning any reason and without prior intimation.</p>
+         <p>7.This Offer will be governed by and construed in accordance with the applicable laws in India, and all matters related to this Offer are subject to the exclusive jurisdiction of the courts at New Delhi.</p>
+    </div>
+    <hr style="width:70%">
+    <div class="empty">
+        <h4> Please select the necessary choices:</h4>
+<form action="file:///C:/Users/sairam/Documents/p5.html">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> extra leg space</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> lounge access</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> mile points</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> upgrades</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> gift vouchers</label><br>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I agree to the terms and conditions.</label><br>
+  </form>
+  <a href='http://127.0.0.1:5500/page2.html'>
+    <button class="but">SUBMIT</button>
+    </div>
+</body>
+</html>

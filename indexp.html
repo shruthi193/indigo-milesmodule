@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a.split {
+  float: left;
+  color: white;
+  font-size: 34px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(36, 14, 145);
+  min-height: 50px;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.arrow {
+  border: solid rgb(254, 251, 251);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: baseline;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.fa_custom {
+color: 
+#f4f7f8
+}
+.button {
+  background-color:  rgb(36, 14, 145); 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button3 {
+	position: absolute;
+  right: 1px;  
+}
+.check {
+    margin: auto;
+  width: 70%;
+  padding: 30px;
+}
+.info {
+    margin: auto;
+  width: 70%;
+  padding: 30px;
+}
+.formStyle { 
+  background-color:#ecf0f1;
+  padding: 20px; 
+  width: 400px; 
+  margin-bottom: 30px; 
+  border-bottom-width: 1px; 
+  border-bottom-style: solid; 
+  border-bottom-color: #ecf0f1; 
+  border-top-style: none; 
+  border-right-style: none; 
+  border-left-style: none; 
+  font-size: 1em;
+  font-weight: 100;
+  color: #090404;
+}
+.formStyle:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.split{
+  height: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="#login">login &nbsp; <i class="arrow down"></i></a>
+    <a href="#info">info &nbsp; <i class="arrow down"></i></a>
+    <a href="#6E Rewards">6E Rewards</a>
+    <a href="#Manage">Manage &nbsp; <i class="arrow down"></i></a>
+    <a href="#Check-in">Check-in</a>
+  <a href="#Book">Book &nbsp; <i class="arrow down"></i></a>
+<a href="#Indigo" class="split"><img src="pic.png.png" alt="flight" width="90" height="30">
+</a>
+</div>
+<img src="https://static.goindigo.in/content/dam/indigov2/6e-website/campaigns/sale/Landing-page-banner-mobile.jpg" alt="flight" width="1263" height="400">
+
+<div class="info">
+    <h2> Miles information </h2>
+
+    <form action="">
+        <input type="text" name="PNR/Booking reference" class="formStyle" placeholder="PNR/Booking reference" required />
+        <input type="email" name="email" class="formStyle" placeholder="Email (required)" required />
+      </form>
+</div>
+<hr style="width:70%">
+<div class="check">
+    <p> Would you wish to exchange you baggage with miles? </p>
+    <button class="button button1">YES</button>
+    <a href='http://127.0.0.1:5500/page2.html'>
+<button class="button button2">NO</button>
+<a href='http://127.0.0.1:5500/page1.html#'>
+<button class="button button3">SUBMIT</button>
+</body>
+</html>
